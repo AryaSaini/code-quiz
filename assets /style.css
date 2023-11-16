@@ -11,4 +11,6 @@ text-align: center;
 
 .customButton{
     margin: 5px;
+    background-color: blueviolet;
+    color: white;
 }

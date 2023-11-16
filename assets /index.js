@@ -39,9 +39,10 @@ var questions = [
 
 var score = 0;
 var timer;
+var currentQuestionIndex = 0
 function startQuiz() {
     document.getElementById("timer").style.display = "block";
-    timeLeft = 60;
+    timeLeft = 70;
     currentQuestionIndex = 0;
 
     var answerButtons = document.querySelectorAll(".answer");
@@ -112,8 +113,9 @@ function endQuiz() {
     highScores.sort((a, b) => b.score - a.score);
     document.getElementById("highScores").innerHtML = "<h3>High Scores:</h3>"
     for (let i = 0; i < highScores.length; i++) {
-        document.getElementById("highScores").innerHTML += "<p>" + (i + 1) + "." + highScores[i].initials + " - " + highScores[i].score + " - " + "</p>";
+        document.getElementById("highScores").innerHTML += "<p>" + (i + 1) + "." + highScores[i].initials + " - " + highScores[i].score + "</p>";
     }
+
     localStorage.setItem("highScores", JSON.stringify(highScores));
 }
 
