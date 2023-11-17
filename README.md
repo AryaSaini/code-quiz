@@ -29,4 +29,4 @@ THEN I can save my initials and my score
 In this project we had to create a quiz with a timer that gave you a final score when you finished the quiz. We had to reinforce a lot of javascript skills that we learned as well as learning how to store things in a local storage and how to pull the information out of it. I had some challenges in displaying the scores in an order from highest to lowest. 
 ```
 ## Project Link
-
+https://aryasaini.github.io/code-quiz/
